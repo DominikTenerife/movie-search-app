@@ -1,0 +1,109 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: black;
+    color: whitesmoke;
+}
+
+header{
+    padding: 2em;
+}
+
+.movie-container {
+    margin: 1em;
+    
+}
+
+header, form {
+    background-color: #181514;
+}
+
+form button {
+    cursor: pointer;
+    background: #2F2A28;
+    color: whitesmoke;
+    font-family: inherit;
+    padding: 0.5em 1em;
+    
+}
+
+form input {
+    width: 250px;
+    background: #2F2A28;
+    color: whitesmoke;
+    padding: 0.5em 1em;
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.movie {
+    display: flex;
+    border-bottom: 1px dotted whitesmoke;
+    gap: 1em;
+    height: 200px;
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    
+}
+
+.basic-data-container {
+    display:flex;
+    gap: 2em;
+    align-items: center;
+    font-weight: 500;
+}
+
+.movie-title {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    gap: 1em;
+}
+
+.add {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    flex-direction: row-reverse;
+    
+}
+.add button {
+    border-radius: 50%;
+    cursor: pointer;
+    
+}
+
+.added {
+    background-color: goldenrod;
+}
+
+.plot {
+    font-size: 0.8em;
+   overflow: hidden;
+   text-overflow: ellipsis;
+}
+
+
+
+.main-img {
+    width:120px;
+    overflow: hidden;
+}
+
+.remove {
+    
+    display: none;
+}
+
