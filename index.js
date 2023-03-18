@@ -73,7 +73,7 @@ form.addEventListener("submit", function(e){
                 })
             })
             
-        },1500)
+        },6000)
         
     }
     
