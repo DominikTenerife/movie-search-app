@@ -6,8 +6,22 @@ html, body {
     color: whitesmoke;
 }
 
+h1 {
+    font-size: 1.6em;
+}
+
+h2 {
+    font-size: 1.3em;
+}
+
 header{
     padding: 2em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
 }
 
 .movie-container {
@@ -29,7 +43,7 @@ form button {
 }
 
 form input {
-    width: 250px;
+    width: 100%;
     background: #2F2A28;
     color: whitesmoke;
     padding: 0.5em 1em;
@@ -37,6 +51,7 @@ form input {
 
 .header-top {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
 }
@@ -107,23 +122,33 @@ header a {
     display: none;
 }
 
-@media (max-width: 250px){
+@media (min-width: 500px){
 
  h1 {
-    font-size: 1.5em;
+    font-size: 2m;
  }
 
  h2 {
-    font-size: 1.2em;
+    font-size: 1.5em;
  }
+
+ form {
+    flex-direction: row;
+    gap: 1em;
+ }
+
+ form input {
+    width: 300px;
+ }
+
+ 
     
 .header-top {
-    flex-direction: column;
-    gap: 0.5em;
+    flex-direction: row;
+    gap: 1em;
 }
 
-.movie-container {
-    padding-right: 0.5em;
-}
 
 }
+
+
