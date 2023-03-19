@@ -112,9 +112,14 @@ header a {
  h1 {
     font-size: 1.5em;
  }
+
+ h2 {
+    font-size: 1.2em;
+ }
     
 .header-top {
     flex-direction: column;
+    gap: 0.5em;
 }
 
 .movie-container {
