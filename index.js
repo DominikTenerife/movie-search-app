@@ -1,6 +1,7 @@
 
 const form =document.getElementById('search-form')
-let watchlistArray = JSON.parse(localStorage.getItem("myWatchlist"))
+let watchlistArray = []
+localStorage.setItem("myWatchlist", JSON.stringify(watchlistArray))
 
 
 form.addEventListener("submit", function(e){
