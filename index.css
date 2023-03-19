@@ -107,3 +107,18 @@ header a {
     display: none;
 }
 
+@media (max-width: 250px){
+
+ h1 {
+    font-size: 1.5em;
+ }
+    
+.header-top {
+    flex-direction: column;
+}
+
+.movie-container {
+    padding-right: 0.5em;
+}
+
+}
