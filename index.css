@@ -52,7 +52,6 @@ form input {
 
 .header-top {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: space-between;
 }
@@ -71,14 +70,20 @@ header a {
     padding-bottom: 1em;
     text-overflow: ellipsis;
     overflow: hidden;
+    min-width: 150px;
     
+}
+
+.movie-info {
+    display: flex;
+    padding-bottom: 1em;
 }
 
 .basic-data-container {
     display:flex;
-    gap: 2em;
+    gap: 1em;
     align-items: center;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .movie-title {
@@ -126,11 +131,11 @@ header a {
 @media (min-width: 500px){
 
  h1 {
-    font-size: 2m;
+    font-size: 3em;
  }
 
  h2 {
-    font-size: 1.5em;
+    font-size: 2em;
  }
 
  form {
@@ -140,6 +145,10 @@ header a {
 
  form input {
     width: 500px;
+ }
+
+ a {
+    font-size: 2em;
  }
 
  .movie {
@@ -159,6 +168,12 @@ header a {
     width:140px;
 }
 
+.basic-data-container {
+    display:flex;
+    gap: 2em;
+    align-items: center;
+    font-weight: 500;
+}
 
 }
 
