@@ -52,9 +52,11 @@ form.addEventListener("submit", function(e){
            
         })
         
-        setTimeout(function (){
-            movieContainer.innerHTML = html
-            movieIndexArray.forEach(function(data){
+        setTimeout(async function (){
+            function changeHtml () {movieContainer.innerHTML = html}
+            await changeHtml()
+            setTimeout(function (){
+                movieIndexArray.forEach(function(data){
                 const addBtn =document.getElementById(data)
                 let isChosen = false
                 addBtn.addEventListener("click", function(){
@@ -71,9 +73,9 @@ form.addEventListener("submit", function(e){
                         localStorage.setItem("myWatchlist", JSON.stringify(watchlistArray))
                     }
                 })
-            })
+            })},2000) 
             
-        },6000)
+        },1500)
         
     }
     
